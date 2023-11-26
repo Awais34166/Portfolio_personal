@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.sidebar {
+    position: absolute;
+    background:url(/images/sidebar.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+     width: 300px;
+     font-family: 'Fira Sans', sans-serif;
+     height: 100vh;
+     transition: transform 0.3s ease-in;
+}
+.main {
+    /* background-color: yellow; */
+    width: 100vw;
+    height: 100vh;
+    background: url(/images/contact.jpg) no-repeat ;
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.sidebar nav {
+    padding: 10px;   
+}
+.sidebar nav li {
+    list-style: none;
+    padding: 30px 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    display: flex;
+}
+
+/* Contact.html styling */
+.contactform {
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0 40px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin:15px 8px;
+}
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+.contactform form div {
+    padding: 12px 0px;
+   display: flex;
+   flex-direction: column;
+}
+.contactform form div input {
+    width:35vw;
+    margin: 6px 0 0 0;
+    border-radius: 5px;
+    padding: 3px;
+}
+#emailHelp {
+    font-size: 10px;
+    margin: 0 5px;
+    color: rgb(11, 199, 189);
+    padding: 3px 0 0 0;
+}
+#form-check {
+    flex-direction: row;
+}
+#form-check input {
+    width: 20px;
+    margin: 3px 0;
+}
+.btn-primary {
+    padding: 9px 14px;
+    font-size: 12px;
+    border-radius: 40px;
+    color: white;
+    background-color: dodgerblue;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.hamb {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.cross {
+    margin-left: 250px;
+    
+}
+.sidebarGo {
+    transform:translate(-443px, 0px);
+    
+}
+
+@media (max-width: 881px) {
+   
+    .sidebar {
+        transform:translate(-443px, 0px);
+        
+    }
+    .devpic {
+        display: none;
+    }
+}
